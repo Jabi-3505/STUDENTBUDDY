@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f5f7fb;
+    color:#222;
+    line-height:1.6;
+}
+
+/* ===========================
+   Header
+=========================== */
+
+header{
+    background:#fff;
+    position:sticky;
+    top:0;
+    z-index:1000;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+}
+
+nav{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 0;
+}
+
+nav h1 a{
+    text-decoration:none;
+    color:#2563eb;
+    font-size:30px;
+    font-weight:700;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:35px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:#222;
+    font-weight:500;
+    transition:.3s;
+}
+
+nav ul li a:hover{
+    color:#2563eb;
+}
+
+/* ===========================
+   Hero
+=========================== */
+
+.hero{
+    background:linear-gradient(135deg,#2563eb,#60a5fa);
+    color:#fff;
+    text-align:center;
+    padding:100px 20px;
+}
+
+.hero h1{
+    font-size:50px;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:20px;
+    margin-bottom:35px;
+}
+
+.hero-btn{
+    display:inline-block;
+    text-decoration:none;
+    background:#fff;
+    color:#2563eb;
+    padding:15px 35px;
+    border-radius:50px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.hero-btn:hover{
+    transform:translateY(-5px);
+}
+
+/* ===========================
+   Search
+=========================== */
+
+.search-section{
+    width:90%;
+    max-width:900px;
+    margin:50px auto;
+}
+
+.search-section input{
+    width:100%;
+    padding:18px 25px;
+    border:none;
+    border-radius:50px;
+    outline:none;
+    font-size:16px;
+    box-shadow:0 8px 20px rgba(0,0,0,.1);
+}
+
+/* ===========================
+   Section
+=========================== */
+
+section{
+    padding:70px 8%;
+}
+
+section h2{
+    text-align:center;
+    font-size:36px;
+    color:#2563eb;
+    margin-bottom:40px;
+}
+
+/* ===========================
+   Quick Access
+=========================== */
+
+.quick-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:20px;
+}
+
+.quick-grid a{
+    text-decoration:none;
+    background:#fff;
+    color:#2563eb;
+    padding:18px;
+    text-align:center;
+    border-radius:15px;
+    font-weight:600;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.quick-grid a:hover{
+    background:#2563eb;
+    color:#fff;
+    transform:translateY(-5px);
+}
+
+/* ===========================
+   Course Cards
+=========================== */
+
+.course-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+}
+
+.course-card{
+    background:#fff;
+    padding:30px;
+    border-radius:20px;
+    text-align:center;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.course-card:hover{
+    transform:translateY(-8px);
+}
+
+.course-card h3{
+    color:#2563eb;
+    margin-bottom:15px;
+}
+
+.course-card p{
+    color:#555;
+    margin-bottom:25px;
+}
+
+.course-card a{
+    display:inline-block;
+    text-decoration:none;
+    background:#2563eb;
+    color:#fff;
+    padding:10px 25px;
+    border-radius:30px;
+    transition:.3s;
+}
+
+.course-card a:hover{
+    background:#1747b8;
+}
+
+/* ===========================
+   Footer
+=========================== */
+
+footer{
+    background:#111827;
+    color:#fff;
+    padding:60px 8%;
+}
+
+.footer-container{
+    max-width:1200px;
+    margin:auto;
+}
+
+.footer-logo{
+    text-align:center;
+    margin-bottom:40px;
+}
+
+.footer-logo h2{
+    color:#60a5fa;
+    font-size:32px;
+}
+
+.footer-logo p{
+    color:#cbd5e1;
+}
+
+.footer-content{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:35px;
+}
+
+.footer-box h3{
+    margin-bottom:15px;
+}
+
+.footer-box a{
+    display:block;
+    text-decoration:none;
+    color:#cbd5e1;
+    margin:10px 0;
+    transition:.3s;
+}
+
+.footer-box a:hover{
+    color:#60a5fa;
+    padding-left:8px;
+}
+
+.footer-box p{
+    color:#cbd5e1;
+    margin:8px 0;
+}
+
+footer hr{
+    margin:35px 0;
+    border:none;
+    border-top:1px solid rgba(255,255,255,.15);
+}
+
+.copyright{
+    text-align:center;
+    color:#94a3b8;
+}
+
+/* ===========================
+   Responsive
+=========================== */
+
+@media(max-width:768px){
+
+    nav{
+        flex-direction:column;
+    }
+
+    nav ul{
+        flex-direction:column;
+        gap:15px;
+        margin-top:20px;
+        text-align:center;
+    }
+
+    .hero{
+        padding:80px 20px;
+    }
+
+    .hero h1{
+        font-size:38px;
+    }
+
+    .hero p{
+        font-size:17px;
+    }
+
+    section{
+        padding:50px 5%;
+    }
+
+    section h2{
+        font-size:28px;
+    }
+
+    .footer-content{
+        text-align:center;
+    }
+}
